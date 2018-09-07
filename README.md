@@ -147,7 +147,7 @@ API Respose:
 ## Swagger UI - API Documentation
 In this Application the swagger UI is also configured for the API documentation purpose. SwaggerUIController exposed the SwaggerUI with the context path ("/")
 
-Swagger UI URL : http://localhost:8080/swagger-ui.html
+Swagger UI URL : http://localhost:8080/swagger
 
 The Swagger UI can be used to send the request to the REST API in order get the response of Search Albums and Books operation.
 In Swagger UI, Under album-book-search-controller a GET method with the path '/api/list' should be listed in operations. Use this operation in order to search the albums and books by providing the input parameter term and click button Try it out! 
