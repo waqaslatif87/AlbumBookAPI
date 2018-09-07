@@ -158,7 +158,7 @@ The request has been sent and response will be returned in the response body.
 For Monitoring purpose Spring Actuator is used in this application. Actuator brings production-ready features to the application. Actuator in this application is mainly used to expose the Health and performance metrices of the running API and Application.
 Actuator server is configured in another tomcat with a diferrent using the property 'management.server.port=8081' defined in application.properties file.
 
-Actuator Server URL : GET http://localhost:8081/actuator
+Actuator Server URL : http://localhost:8081/actuator
 
 Hitting this URL in the browser will give you the details about the endpoints which is exposed through the configuration.
 
