@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -95,7 +96,7 @@ public class AlbumBookServiceImpl implements IAlbumBookService {
 
 			for (final Future<List<APIResponseItem>> future : futureList) {
 				try {
-					responseList.addAll(future.get());
+					responseList.addAll(future.get(3, TimeUnit.SECONDS));
 				} catch (Exception ex) {
 					log.error("Error occurred while getting response from future. " + ex.getMessage(), ex);
 					continue;
