@@ -317,5 +317,5 @@ In this application the integration tests has been written to test the REST API.
 
 ## Authors
 * **Waqas Latif**
-Email : waqaslatif88@outlook.com
+(Email : waqaslatif88@outlook.com)
 
